@@ -17,18 +17,30 @@
                 </ul>  
             </div>
         </header>
-        <h2>Ingresa tus datos para solicitar más información</h2>
-            <form>
-                <p>Nombre</p>
-                    <input type ="text" placeholder="Nombre">
-                <p>Apellidos</p>
-                    <input type ="text" placeholder="Apellidos">
-                <p>Numero de teléfono</p>
-                    <input type ="text" required placeholder="Numero">
-                    <input type="submit" value = "Enviar Datos">
-                <p>Aceptar terminos y condiciones</p>
-                    <input type ="checkbox">
-            </form>
+        <div >
+            <span class="span1"><h2>Ingresa tus datos para solicitar más información</h2><span>
+        </div>
+        <div class="div-divinput">   
+            <div class="div-formulario">
+                <form>
+                    <p>Nombre</p>
+                        <input type ="text" placeholder="Nombre">
+                    <p>Apellidos</p>
+                        <input type ="text" placeholder="Apellidos">
+                    <p>Numero de teléfono</p>
+                        <input type ="text" required placeholder="Numero">
+                   <label for="miCheckbox">Aceptar terminos y condiciones:</label>
+                        <input type ="checkbox" required id="miCheckbox">
+                    <input class="boton-enviar" type="submit" value = "Enviar Datos">
+                </form>
+            </div>
+           <div class="div-imagen">
+             <img src="Image/contacto.png" alt="Contacto">
+           </div>
+
+        </div>
+        
+            
             <footer>
                 <div class="footer-container">
                     <p>© IHM-2024 All Rights Reserved.</p>
