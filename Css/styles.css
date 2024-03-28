@@ -1,5 +1,101 @@
-/* el punto señala que "subtitulo" es una clase, todo lo que sea de clase "subtitulo" tendra estos atributos */
-.subtitulo
-{ color:#45536E;
-
+/* el punto señala que "head-container" es una clase, todo lo que sea de clase "head-container" tendra estos atributos */
+/*---------------------Atributos para etiquetas------------------------------------------*/
+body, html {
+  margin: 0;
+  padding: 0;
 }
+
+header
+{
+  color: #F2F2F2;
+  font-family: Impact;
+  font-size: 50px;
+  text-align: center;
+  font-style: italic;
+  background-color: #1E2532;
+}
+h2{
+  color: #F2F2F2;
+  font-family: Impact;
+  font-size: 50px;
+  text-align: center;
+  font-style: italic;
+}
+p{
+  color:#000000;
+  font-family: 'Cambria';
+  font-size: 18px;
+  text-align: center;
+}
+
+li 
+{
+  list-style: none;
+  color:#000000;
+  font-family: 'Cambria';
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+footer
+{
+ background-color: #1E2532;
+}
+/*--------------------------------------------------------------------------------------------*/
+.head-container   /*este es el sub encabezado, aca esta el menu*/
+{
+  font-size: 20px;
+  height: 100px;
+  display: block;
+  text-align: center;
+  background-color: #1E2532;
+}
+  .head-container ul{
+    
+    display: block;
+    text-align: center;
+    height: 100px;
+    list-style: none;  
+  }
+      .head-container ul li {
+  
+          margin-top: 120px;
+          display: inline; 
+          margin-right: 100px;
+
+         }
+        .head-container ul li a{ 
+          color: #45536Eff;
+          background-color: #fff;
+          border: 0;
+          cursor: pointer;
+          padding: .3rem 2rem;
+          display: inline-block;
+          vertical-align: top;
+          text-align: center;
+          line-height: 3rem;
+          width: auto;
+          border-radius: 2rem;
+          /*--------------------------*/
+            text-decoration: none;
+            font-family: amarillo;
+                                }
+
+.footer-container    /*este es el footer*/
+{
+  font-size: 16px;
+  display: block;
+  text-align: center;
+}
+    .footer-container a
+      {
+        color: #F2F2F2;
+        font-family: 'Cambria';
+        text-decoration: none;
+        margin-right: 50px;
+       }
+    .footer-container p{
+      color: #F2F2F2;
+        text-align: left;
+      }
+
