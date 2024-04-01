@@ -87,6 +87,7 @@ body {
 .texto{
     /*subimos un poco el texto que no quede en medio*/
     color: var(--subtitulo-color);
+    font-family: 'Gill SansCalibri;
 }
 
 /*Ahora pasaremos a lo que es Catálogo lo hago por acá para reutilizar las clases ya hechas anteriormente*/
