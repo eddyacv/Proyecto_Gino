@@ -87,7 +87,10 @@ body {
 .texto{
     /*subimos un poco el texto que no quede en medio*/
     color: var(--subtitulo-color);
+<<<<<<< HEAD
     font-family: 'Gill SansCalibri;
+=======
+>>>>>>> 9f49bec0a5ee2814305912ee8ecd189e09ab121b
 }
 
 /*Ahora pasaremos a lo que es Catálogo lo hago por acá para reutilizar las clases ya hechas anteriormente*/
@@ -137,5 +140,37 @@ body {
     }
 }
 
+<<<<<<< HEAD
+=======
+/* footer*/
+footer
+{
+ background-color: #1E2532;
+}
+
+.footer-container    /*este es el footer*/
+{
+  font-size: 16px;
+  display: block;
+  text-align: center;
+  padding: 15px;
+  background-color: #1E2532;
+}
+    .footer-container a
+      {
+        color: #F2F2F2;
+        font-family: 'Cambria';
+        text-decoration: none;
+        margin-right: 50px;
+       }
+    .footer-container p{
+      color: #F2F2F2;
+        text-align: left;
+      }
+.imagen-fondo{
+     width:max-content;
+     height:max-content;
+}
+>>>>>>> 9f49bec0a5ee2814305912ee8ecd189e09ab121b
 
 
