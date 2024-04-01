@@ -1,0 +1,140 @@
+:root {
+    --primary-color: #29374E;
+    --secondary-color: #E08D93;
+    --subtitulo-color: white;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Rest of your CSS code */
+/*Este es el navegador*/
+.logo img {
+    max-height: 90%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--secondary-color);
+    color: white;
+    width: 100%;
+    height: 100px;
+    
+}
+
+.enlaces{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    color: white;
+    gap: 10px;
+}
+
+.enlaces a {
+    text-decoration: none;
+    color: black;
+}
+
+.boton{
+    display: flex;
+    width: 80px;
+    background-color: white;
+    justify-content: center;
+    border-radius: 5px; /* Add this line to make the border rounded */
+    
+}
+
+body {
+    background-color: var(--primary-color);
+}
+
+/* Subtitulo con fondo */
+
+.subtitulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-image: url(../Image/landscape.jpg);
+    height: 80vh;
+    background-size: cover;
+}
+
+/*Es para poner una capa encima y hacer el efecto*/
+.contenedor{
+    width: 100%;
+    height: 100%;
+    /*centrando el texto para que quede en medio*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    background-color: black;
+    opacity: 0.7;
+}
+
+.texto{
+    /*subimos un poco el texto que no quede en medio*/
+    color: var(--subtitulo-color);
+}
+
+/*Ahora pasaremos a lo que es Catálogo lo hago por acá para reutilizar las clases ya hechas anteriormente*/
+
+
+.contenedor2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.centrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Fijo las dimensiones que seria para escritorio*/
+.catalogo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    margin-top: 20px;
+    
+     /* Centra el contenedor en la página y establece los márgenes a 0 */
+    place-content: center;
+
+    
+}
+
+.producto{
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    margin: 0; /* Asegúrate de que los elementos del producto no tienen márgenes */
+}
+@media (max-width: 900px) {
+    .catalogo {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .producto{
+        width: 150px;
+        height: 250px;
+        
+    }
+}
+
+
+
