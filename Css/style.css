@@ -1,95 +1,117 @@
 :root {
-    --primary-color: #e0e0e0;
-    --secondary-color: #E08D93;
+    --primary-color: #1E1D19;
+    --secondary-color: #84050C;
+    --terciary-color: #292929;
     --subtitulo-color: white;
 }
-
-* {
+/*Bodys*/
+body
+{ margin: 0;
+  background-color: var(--primary-color);
+}
+.politicas-body{
     margin: 0;
-    padding: 0;
+    background-color: var(--primary-color);
+}
+/*Cabecera del index*/
+.index-header
+{ 
+  box-sizing: border-box;
+    max-width: 1600px;
+    max-height: 800px;
+    height: 800px;
+    width: 100%;
+  display: inline-flexbox;
+  background-image: url(../image/fondo-index.jpg);
+    background-repeat: no-repeat;
+
 }
 
-/* Rest of your CSS code */
 /*Este es el navegador*/
+.nav {
+    margin-left: 100px;
+    box-sizing: border-box;
+    margin-bottom: 130px;  /*separacion del nav y el parrafo*/
+    display: flex;
+    align-items: center;
+    color: white;
+    height: 100px; 
+}
+
 .logo img {
     max-height: 100%;
 }
 
 .logo {
-    display: flex;
+    margin-left: 20px;
     align-items: center;
     height: 100%;
-}
-
-.nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: var(--secondary-color);
-    color: white;
-    width: 100%;
-    height: 100px;
-    
 }
 
 .enlaces{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    
-    color: white;
-    gap: 10px;
-}
+    margin: 0;
+    padding: 0;
+    width: 1150px;
+    height: 50px;
 
-.enlaces a {
+}
+.enlaces li {
+    margin-left: 20px;
+    padding: 15px;
+    list-style: none;
     text-decoration: none;
-    color: black;
+    text-indent: 30px;
+    color: #fff;
+
+}
+.enlaces a{
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
 }
 
-.boton{
-    display: flex;
-    width: 80px;
-    background-color: white;
-    justify-content: center;
-    border-radius: 5px; /* Add this line to make the border rounded */
-    
+/*este contenedor centra el boton*/
+.contenedor div 
+{  margin-left: 150px;
+
+    box-sizing: border-box;
+ height: 50px;
+ width: 350px;
+ margin-top: 40px;
 }
-
-body {
-    background-color:rgb(149, 162, 235);
+/*este es el boton*/
+.contenedor div a
+{  
+    border-radius: 7px;
+    background-color: var(--secondary-color);
+    padding:20px;
+    padding-left: 100px;
+    padding-right:100px ;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
 }
-
-/* Subtitulo con fondo */
-
-.subtitulo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    background-image: url(../Image/landscape.jpg);
-    height: 80vh;
-    background-size: cover;
-}
-
-/*Es para poner una capa encima y hacer el efecto*/
+/*Contenedor del titulo,subtitulo*/
 .contenedor{
-    width: 100%;
-    height: 100%;
-    /*centrando el texto para que quede en medio*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     
-    background-color: black;
-    opacity: 0.7;
+    display: table-row;
 }
 
-.texto{
-    /*subimos un poco el texto que no quede en medio*/
+.contenedor h1{
+    margin-left: 150px;
+    font-size: 70px;
+    text-align: left;
     color: var(--subtitulo-color);
     font-family: Gill SansCalibri;
-
+}
+.contenedor h2{
+    margin-left: 150px;
+    width: 50%;
+    font-size: 20px;
+    text-align: left;
+    color: var(--subtitulo-color);
+    font-family: Gill SansCalibri;
 }
 
 /*Ahora pasaremos a lo que es Catálogo lo hago por acá para reutilizar las clases ya hechas anteriormente*/
@@ -138,14 +160,37 @@ body {
         
     }
 }
+/*este es el footer*/
+footer
+{
+ background-color: var(--terciary-color);
+}
+footer ul
+{  padding: 10px;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    text-align: center;
 
-.footer-container{    /*este es el footer*/
-    
+}
+footer li
+{  color: #fff;
+   text-indent: 30px;
+   margin: auto;
+
+}
+footer a
+{
+    text-decoration: none;
+    color: #fff;
+}
+.footer-container{  
+  padding: 10px;
+  height: 70%; 
   font-size: 16px;
   display: block;
   text-align: center;
-  padding: 15px;
-  background-color: #1E2532;
+  background-color: var(--primary-color);
 }
 
 .footer-container a{
@@ -165,22 +210,20 @@ body {
      height:max-content;
 }
 
-/*Titulo de la pestaña*/
+/*Titulo de la pestaña politicas de privacidad*/
 .titulo{
-    color: rgb(55, 147, 233);
-    text-shadow: 1px 1px 0px rgb(88, 88, 88);
+    color: var(--secondary-color);
     padding: 20px;
 }
 /*sus subtitulos*/
 .politicas-div h2{
-    color: rgb(55, 147, 233);
-    text-shadow: 1px 1px 0px rgb(88, 88, 88);
+    color: var(--secondary-color);
     font-size: 26px;
     margin: 5px;
 }
 /*Es del parrafo grande*/
 .parrafo-grande{
-    color: #fc7a82;
+    color: #fff;
     text-shadow: 1px 1px 0px rgb(88, 88, 88);
     font-size: 40px;
     padding: 40px;
