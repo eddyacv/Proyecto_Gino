@@ -3,6 +3,7 @@
     --secondary-color: #84050C;
     --terciary-color: #292929;
     --subtitulo-color: white;
+    --sangria:150px;
 }
 /*Bodys*/
 body
@@ -94,19 +95,19 @@ body
 }
 /*Contenedor del titulo,subtitulo*/
 .contenedor{
-    
+    margin-top: 50px;
     display: table-row;
 }
 
 .contenedor h1{
-    margin-left: 150px;
+    margin-left: var(--sangria);
     font-size: 70px;
     text-align: left;
     color: var(--subtitulo-color);
     font-family: Gill SansCalibri;
 }
 .contenedor h2{
-    margin-left: 150px;
+    margin-left: var(--sangria);
     width: 50%;
     font-size: 20px;
     text-align: left;
@@ -115,7 +116,7 @@ body
 }
 
 /*Ahora pasaremos a lo que es Catálogo lo hago por acá para reutilizar las clases ya hechas anteriormente*/
-
+/*Catalogo*/
 
 .contenedor2 {
     width: 100%;
@@ -159,6 +160,15 @@ body
         height: 250px;
         
     }
+}
+.centrar a{
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    font-size: 30px;
+    text-decoration: none;
+    color: #fff;
 }
 /*este es el footer*/
 footer
@@ -288,5 +298,36 @@ footer a
     text-align: center;
 }
 
-/*div-nosotros*/
+/*div-faq*/
 
+.faq-div{
+  
+    font-family: sans-serif;
+    color: #fff;
+    width: calc(100%-var(--sangria)); /*Hago un calculo ya que tengo que restar el 150 px de la sangria al 100% asi no se va hacia un lado*/
+    margin-left: var(--sangria);
+}
+.faq-div h1{
+    color: var(--secondary-color);
+    text-shadow:0px 3px #000;
+    border-bottom: 3px solid #000;
+
+}
+details
+{   
+    padding: 20px;
+    margin: 20px;
+     font-weight: 100;
+     border: 2px solid #000;
+     box-shadow: 0 0 10px #aaa;
+   
+}
+summary
+{   font-size: 30px;
+    font-weight: bold;
+}
+.faq-div p{
+    margin: 20px 40px;
+    font-size: 20px;
+    color: #aaa;
+}
