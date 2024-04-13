@@ -1,8 +1,9 @@
 :root {
-    --primary-color: #29374E;
+    --primary-color: #e0e0e0;
     --secondary-color: #E08D93;
     --subtitulo-color: white;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +12,7 @@
 /* Rest of your CSS code */
 /*Este es el navegador*/
 .logo img {
-    max-height: 90%;
+    max-height: 100%;
 }
 
 .logo {
@@ -87,10 +88,8 @@ body {
 .texto{
     /*subimos un poco el texto que no quede en medio*/
     color: var(--subtitulo-color);
-<<<<<<< HEAD
-    font-family: 'Gill SansCalibri;
-=======
->>>>>>> 9f49bec0a5ee2814305912ee8ecd189e09ab121b
+    font-family: Gill SansCalibri;
+
 }
 
 /*Ahora pasaremos a lo que es Catálogo lo hago por acá para reutilizar las clases ya hechas anteriormente*/
@@ -140,36 +139,110 @@ body {
     }
 }
 
-<<<<<<< HEAD
-=======
-/* footer*/
-footer
-{
- background-color: #1E2532;
-}
-
-.footer-container    /*este es el footer*/
-{
+.footer-container{    /*este es el footer*/
+    
   font-size: 16px;
   display: block;
   text-align: center;
   padding: 15px;
   background-color: #1E2532;
 }
-    .footer-container a
-      {
+
+.footer-container a{
         color: #F2F2F2;
         font-family: 'Cambria';
         text-decoration: none;
         margin-right: 50px;
-       }
-    .footer-container p{
+}
+
+.footer-container p{
       color: #F2F2F2;
         text-align: left;
-      }
+}
+
 .imagen-fondo{
      width:max-content;
      height:max-content;
 }
->>>>>>> 9f49bec0a5ee2814305912ee8ecd189e09ab121b
+
+/*Titulo de la pestaña*/
+.titulo{
+    color: rgb(55, 147, 233);
+    text-shadow: 1px 1px 0px rgb(88, 88, 88);
+    padding: 20px;
+}
+/*sus subtitulos*/
+.politicas-div h2{
+    color: rgb(55, 147, 233);
+    text-shadow: 1px 1px 0px rgb(88, 88, 88);
+    font-size: 26px;
+    margin: 5px;
+}
+/*Es del parrafo grande*/
+.parrafo-grande{
+    color: #fc7a82;
+    text-shadow: 1px 1px 0px rgb(88, 88, 88);
+    font-size: 40px;
+    padding: 40px;
+    
+}
+/*Este es del div para colocar el parrafo al costado*/
+.letra-costado{
+    display: flex;
+    justify-content: center;
+}
+/*Este es de la imagen de seguridad*/
+.imagen-securiti{
+    width: 300px;
+    height: 300px;
+    margin-left: 10px;
+}
+/*Este son de los parrafos del divv*/
+.politicas-div p {
+    font-size: 25px;
+}
+/*header-nosotros*/
+.header-nosotros
+{
+    color: #fff; 
+    font-weight: bold;
+  
+}
+.header-nosotros h2{
+    margin: 20px;
+    text-decoration: underline;
+}
+/*div-nosotros*/
+.div-nosotros
+{   padding: 20px;
+    color: #fff;
+    display: flex;
+}
+.div-nosotros div
+{  
+    max-width: 620px;
+    max-height: 512px;
+}
+
+.div-nosotros img
+{   padding: 20px;
+    max-width: 512px;
+    max-height: 512px;
+    margin-right: 120px;
+    margin-left: 100px;
+}
+.div-nosotros p
+{   
+    margin-left: 120px;
+    font-size: 20px;
+    flex: 30%;
+    margin-bottom:50px ;
+}
+.div-nosotros h2
+{   margin-top: 15%;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*div-nosotros*/
 
